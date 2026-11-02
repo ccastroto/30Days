@@ -13,5 +13,5 @@ data class Audi(
 )
 
 val audis = listOf(
-    Audi(R.drawable.audi_80___celebrating_50th_birthday, R.string.audi_80_1, "80", R.string.variante_modelo, "audi 80 ...")
+    Audi(R.drawable.audi_80___celebrating_50th_birthday, R.string.audi_80_1, "70", R.string.variante_modelo, "audi 80 ...")
 )

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">30Days</string>
-    <string name="audi_80_1">80</string>
+    <string name="audi_80_1">Audi 80</string>
     <string name="variante_modelo">coupe</string>
-    <string name="decada">años %d</string>
+    <string name="decada">años %s</string>
+    <string name="descripcion_80_1">%s</string>
 </resources>
