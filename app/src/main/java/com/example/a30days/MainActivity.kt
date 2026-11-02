@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
@@ -20,6 +21,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -33,7 +35,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            _30DaysTheme {
+            _30DaysTheme(
+                darkTheme = false
+            ) {
                 Surface(
                     modifier = Modifier.fillMaxSize()
                 ){
@@ -62,13 +66,21 @@ fun Panel(audi: Audi, modifier: Modifier = Modifier) {
        Row(
            modifier = Modifier
                .fillMaxWidth()
+               .padding(8.dp)
        ) {
-           AudiImage(audi.imageResourceId)
-           AudiTipo(audi.modelo, audi.variante, audi.decada)
-       // imagen
-       // modelo
-       // decada (años: xx - xx)
-       // descrpcion
+           AudiImage(
+               audiImg = audi.imageResourceId,
+               modifier = Modifier.size(120.dp)
+           )
+           AudiTipo(
+               AudiModelo = audi.modelo,
+               AudiVariante = audi.variante,
+               decada = audi.decada,
+               descripcion = audi.Descripcion,
+               modifier = Modifier
+                   .padding(start = 12.dp)
+                   .weight(1f)
+           )
        }
    }
 }
@@ -78,7 +90,8 @@ fun AudiImage(@DrawableRes audiImg: Int, modifier: Modifier = Modifier) {
     Image(
         modifier = modifier,
         painter = painterResource(audiImg),
-        contentDescription = null
+        contentDescription = null,
+        contentScale = ContentScale.Crop
     )
 }
 
@@ -87,21 +100,27 @@ fun AudiTipo(
     @StringRes AudiModelo: Int,
     @StringRes AudiVariante: Int,
     decada: String,
+    descripcion: String,
     modifier: Modifier = Modifier
 ){
     Column(modifier = modifier) {
         Text(
             text = stringResource(AudiModelo),
-            style = MaterialTheme.typography.displayMedium,
-            modifier = Modifier.padding(8.dp)
+            style = MaterialTheme.typography.titleLarge
         )
         Text(
-            text = stringResource(R.string.variante_modelo, AudiVariante),
-            style = MaterialTheme.typography.displayMedium
+            text = stringResource(AudiVariante),
+            style = MaterialTheme.typography.bodyMedium,
+            modifier = Modifier.padding(top = 4.dp)
         )
         Text(
             text = stringResource(R.string.decada, decada),
-            style = MaterialTheme.typography.displayMedium,
+            style = MaterialTheme.typography.bodySmall,
+            modifier = Modifier.padding(top = 4.dp)
+        )
+        // description -> hacerla despegable (prox)
+        Text(
+            text = stringResource(R.string.descripcion_80_1, descripcion),
         )
     }
 }
