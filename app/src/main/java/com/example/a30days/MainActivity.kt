@@ -120,7 +120,7 @@ fun AudiTipo(
         )
         // description -> hacerla despegable (prox)
         Text(
-            text = stringResource(R.string.descripcion_80_1, descripcion),
+            text = stringResource(R.string.descripcion, descripcion),
         )
     }
 }

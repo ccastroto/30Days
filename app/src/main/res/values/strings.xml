@@ -1,7 +1,22 @@
 <resources>
     <string name="app_name">30Days</string>
+
     <string name="audi_80_1">Audi 80</string>
+    <string name="audi_50">Audi 50</string>
+    <string name="audi_100">Audi 100</string>
+
     <string name="variante_modelo">coupe</string>
+    <string name="variante_modelo_2">hatchback</string>
+
     <string name="decada">años %s</string>
-    <string name="descripcion_80_1">%s</string>
+
+    <string name="descripcion">%s</string>
+
+
+    <!--
+    <string name="audi_50">Audi 50</string>
+    <string name="variante_modelo_2">hatchback</string>
+    <string name="decada_50">años %s</string>
+    <string name="descripcion_50">%s</string>
+    -->
 </resources>
