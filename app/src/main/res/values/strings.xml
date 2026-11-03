@@ -2,13 +2,45 @@
     <string name="app_name">30Days</string>
 
     <string name="audi_80_1">Audi 80</string>
+    <string name="audi_80_2">Audi 80 b2</string>
     <string name="audi_50">Audi 50</string>
     <string name="audi_100">Audi 100</string>
+    <string name="audi_100_2">Audi 100 c3</string>
+    <string name="audi_200">Audi 200</string>
+    <string name="audi_quattro">Audi Quattro</string>
+    <string name="audi_s_quattro">Audi Sport Quattro</string>
+    <string name="audi_coupe_gt">Audi Coupe GT</string>
+    <string name="audi_90">Audi 90 b3</string>
+    <string name="audi_v8">Audi V8</string>
+    <string name="audi_s2_coupe">Audi S2 Coupe</string>
+    <string name="audi_cabriolet">Audi Cabriolet</string>
+    <string name="audi_rs2_avant">Audi RS2 Avant</string>
+    <string name="audi_80_3">Audi 80 b4</string>
+    <string name="audi_a4">Audi A4 b5</string>
+    <string name="audi_a8">Audi A8 d2</string>
+    <string name="audi_a3">Audi A3 8L</string>
+    <string name="audi_tt">Audi TT 8N</string>
+    <string name="audi_rs6_avant">Audi RS6 Avant</string>
+    <string name="audi_a3_2">Audi A3 8P</string>
+    <string name="audi_a4_2">Audi A4 B7</string>
+    <string name="audi_q7">Audi Q7 4L</string>
+    <string name="audi_r8">Audi R8 Type 42</string>
+    <string name="audi_a5">Audi A5 Coupe</string>
+    <string name="audi_a7">Audi A7 Sportback</string>
+    <string name="audi_rs3">Audi RS3 Sportback 8V</string>
+    <string name="audi_rs6">Audi RS6 Avant C8</string>
+    <string name="audi_etron">Audi e-tron gt</string>
+    <string name="audi_q4_etron">Audi Q4 e-tron</string>
 
     <string name="variante_modelo">coupe</string>
     <string name="variante_modelo_2">hatchback</string>
+    <string name="variante_modelo_3">sedan</string>
+    <string name="variante_modelo_4">avant</string>
+    <string name="variante_modelo_5">cabriolet</string>
+    <string name="variante_modelo_6">suv</string>
+    <string name="variante_modelo_7">superdeportivo</string>
 
-    <string name="decada">años %s</string>
+    <string name="decada">años %d</string>
 
     <string name="descripcion">%s</string>
 

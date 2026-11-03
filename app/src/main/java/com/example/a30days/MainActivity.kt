@@ -99,7 +99,7 @@ fun AudiImage(@DrawableRes audiImg: Int, modifier: Modifier = Modifier) {
 fun AudiTipo(
     @StringRes AudiModelo: Int,
     @StringRes AudiVariante: Int,
-    decada: String,
+    decada: Int,
     descripcion: String,
     modifier: Modifier = Modifier
 ){
