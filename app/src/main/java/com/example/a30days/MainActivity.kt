@@ -8,7 +8,11 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -115,33 +119,43 @@ fun Panel(audi: Audi, modifier: Modifier = Modifier) {
     var expandir by remember { mutableStateOf(false) }
 
    Card(modifier = modifier) {
-       Row(
+       Column(
            modifier = Modifier
-               .fillMaxWidth()
-               .padding(8.dp)
+               .animateContentSize(
+                   animationSpec = spring(
+                       dampingRatio = Spring.DampingRatioNoBouncy,
+                       stiffness = Spring.StiffnessLow
+                   )
+               )
        ) {
-           AudiImage(
-               audiImg = audi.imageResourceId,
-               modifier = Modifier.size(120.dp)
-           )
-           AudiTipo(
-               AudiModelo = audi.modelo,
-               AudiVariante = audi.variante,
+           Row(
                modifier = Modifier
-                   .padding(start = 12.dp)
-                   .weight(1f)
-           )
-           Spacer(Modifier.weight(1f))
-           AudiPanelButton(
-               expandir = expandir,
-               onClick = { expandir = !expandir }
-           )
-       }
-       if (expandir){
-           AudiInformacion(
-               decada = audi.decada,
-               descripcion = audi.Descripcion,
-           )
+                   .fillMaxWidth()
+                   .padding(8.dp)
+           ) {
+               AudiImage(
+                   audiImg = audi.imageResourceId,
+                   modifier = Modifier.size(120.dp)
+               )
+               AudiTipo(
+                   AudiModelo = audi.modelo,
+                   AudiVariante = audi.variante,
+                   modifier = Modifier
+                       .padding(start = 12.dp)
+                       .weight(1f)
+               )
+               Spacer(Modifier.weight(1f))
+               AudiPanelButton(
+                   expandir = expandir,
+                   onClick = { expandir = !expandir }
+               )
+           }
+           if (expandir){
+               AudiInformacion(
+                   decada = audi.decada,
+                   descripcion = audi.Descripcion,
+               )
+           }
        }
    }
 }
