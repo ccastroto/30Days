@@ -25,6 +25,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
@@ -66,7 +70,7 @@ fun AudiApp(){
             items(audis){
                 Panel(
                     audi = it,
-                    modifier = Modifier.padding(8.dp)
+                    modifier = Modifier.padding(12.dp)
                 )
             }
         }
@@ -82,7 +86,7 @@ fun AudiTopBar(modifier: Modifier = Modifier){
             ) {
                 Image(
                     modifier = Modifier
-                        .size(125.dp)
+                        .size(135.dp)
                         .padding(8.dp),
                     painter = painterResource(R.drawable.png_clipart_audi_logo_illustration_audi_rs_2_avant_car_logo_design_text_trademark),
                     contentDescription = "logo audi"
@@ -100,6 +104,8 @@ fun AudiTopBar(modifier: Modifier = Modifier){
 
 @Composable
 fun Panel(audi: Audi, modifier: Modifier = Modifier) {
+    var expandir by remember { mutableStateOf(false) }
+
    Card(modifier = modifier) {
        Row(
            modifier = Modifier
@@ -113,11 +119,15 @@ fun Panel(audi: Audi, modifier: Modifier = Modifier) {
            AudiTipo(
                AudiModelo = audi.modelo,
                AudiVariante = audi.variante,
-               decada = audi.decada,
-               descripcion = audi.Descripcion,
                modifier = Modifier
                    .padding(start = 12.dp)
                    .weight(1f)
+           )
+       }
+       if (expandir){
+           AudiInformacion(
+               decada = audi.decada,
+               descripcion = audi.Descripcion,
            )
        }
    }
@@ -137,8 +147,6 @@ fun AudiImage(@DrawableRes audiImg: Int, modifier: Modifier = Modifier) {
 fun AudiTipo(
     @StringRes AudiModelo: Int,
     @StringRes AudiVariante: Int,
-    decada: Int,
-    descripcion: String,
     modifier: Modifier = Modifier
 ){
     Column(modifier = modifier) {
@@ -151,6 +159,18 @@ fun AudiTipo(
             style = MaterialTheme.typography.bodyMedium,
             modifier = Modifier.padding(top = 4.dp)
         )
+    }
+}
+
+@Composable
+fun AudiInformacion(
+    decada: Int,
+    descripcion: String,
+    modifier: Modifier = Modifier
+){
+    Column(
+        modifier = modifier
+    ){
         Text(
             text = stringResource(R.string.decada, decada),
             style = MaterialTheme.typography.bodySmall,
@@ -162,6 +182,7 @@ fun AudiTipo(
         )
     }
 }
+
 
 
 @Preview
