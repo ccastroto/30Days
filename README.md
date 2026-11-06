@@ -54,4 +54,4 @@ app/src/main/java/com/example/a30days/
 Este proyecto fue desarrollado con fines educativos como parte del aprendizaje y práctica en Android con Jetpack Compose.
 
  ## Desarrollado
- Este proyecta ha suido desarrollado por Carlos Castro Aldrover 2º DAM (@ccastroto)
+ Este proyecta ha sido desarrollado por Carlos Castro Aldrover 2º DAM (@ccastroto)
