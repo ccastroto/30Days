@@ -34,6 +34,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -47,6 +48,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -63,7 +65,8 @@ class MainActivity : ComponentActivity() {
                 darkTheme = false
             ) {
                 Surface(
-                    modifier = Modifier.fillMaxSize()
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.primary
                 ){
                     AudiApp()
                 }
@@ -75,7 +78,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun AudiApp(){
     Scaffold(
-        topBar = {AudiTopBar()}
+        topBar = { AudiTopBar() },
+        containerColor = MaterialTheme.colorScheme.primary
     ) {
         it ->
         LazyColumn(contentPadding = it){
@@ -106,10 +110,15 @@ fun AudiTopBar(modifier: Modifier = Modifier){
                 Text(
                     text = stringResource(R.string.app_name),
                     fontSize = 45.sp,
-                    style = MaterialTheme.typography.displayMedium
+                    style = MaterialTheme.typography.displayMedium,
+                    color = MaterialTheme.colorScheme.onPrimary
                 )
             }
         },
+        colors = TopAppBarDefaults.topAppBarColors(
+            containerColor = MaterialTheme.colorScheme.primary,
+            titleContentColor = MaterialTheme.colorScheme.onPrimary
+        ),
         modifier = modifier
     )
 }
@@ -140,11 +149,11 @@ fun Panel(audi: Audi, modifier: Modifier = Modifier) {
                AudiTipo(
                    AudiModelo = audi.modelo,
                    AudiVariante = audi.variante,
+                   decada = audi.decada,
                    modifier = Modifier
                        .padding(start = 12.dp)
                        .weight(1f)
                )
-               Spacer(Modifier.weight(1f))
                AudiPanelButton(
                    expandir = expandir,
                    onClick = { expandir = !expandir }
@@ -152,8 +161,8 @@ fun Panel(audi: Audi, modifier: Modifier = Modifier) {
            }
            if (expandir){
                AudiInformacion(
-                   decada = audi.decada,
-                   descripcion = audi.Descripcion,
+                   descripcion = audi.descripcion,
+                   modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 16.dp, top = 8.dp)
                )
            }
        }
@@ -192,38 +201,45 @@ fun AudiImage(@DrawableRes audiImg: Int, modifier: Modifier = Modifier) {
 fun AudiTipo(
     @StringRes AudiModelo: Int,
     @StringRes AudiVariante: Int,
+    decada: Int,
     modifier: Modifier = Modifier
 ){
     Column(modifier = modifier) {
         Text(
             text = stringResource(AudiModelo),
-            style = MaterialTheme.typography.titleLarge
+            style = MaterialTheme.typography.titleLarge,
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold
         )
         Text(
             text = stringResource(AudiVariante),
-            style = MaterialTheme.typography.bodyMedium,
+            style = MaterialTheme.typography.titleMedium,
+            fontSize = 18.sp,
             modifier = Modifier.padding(top = 4.dp)
+        )
+        Text(
+            text = stringResource(R.string.decada, decada),
+            style = MaterialTheme.typography.bodyMedium,
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Medium,
+            modifier = Modifier.padding(top = 4.dp, bottom = 4.dp)
         )
     }
 }
 
 @Composable
 fun AudiInformacion(
-    decada: Int,
-    descripcion: String,
+    @StringRes descripcion: Int,
     modifier: Modifier = Modifier
 ){
     Column(
         modifier = modifier
     ){
         Text(
-            text = stringResource(R.string.decada, decada),
-            style = MaterialTheme.typography.bodySmall,
-            modifier = Modifier.padding(top = 4.dp)
-        )
-        // description -> hacerla despegable (prox)
-        Text(
-            text = stringResource(R.string.descripcion, descripcion),
+            text = stringResource(descripcion),
+            style = MaterialTheme.typography.bodyLarge,
+            fontSize = 18.sp,
+            lineHeight = 24.sp
         )
     }
 }
