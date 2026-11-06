@@ -43,6 +43,157 @@
     <string name="decada">años %d</string>
 
     <string name="descripcion">%s</string>
+    <string name="descripcion_audi_100">El Audi 100 de los años 70 pertenece a su primera generación (C1),
+        fabricada entre 1968 y 1976, la cual fue clave para relanzar la marca en el segmento de
+        berlinas de gama alta.</string>
+    <string name="descripcion_audi_100_2">El Audi 100 es un automóvil de turismo del segmento E fabricado
+        por la marca alemana Audi entre los años 1968 y 1994, un modelo clave que transformó a la
+        firma en una marca prémium</string>
+    <string name="descripcion_audi_80">El Audi 80 de los años 70 (generación B1) fue presentado en
+        julio de 1972 y lanzado al mercado ese mismo año, marcando el renacimiento moderno de la
+        marca alemana y siendo nombrado Coche del Año en Europa en 1973</string>
+    <string name="descripcion_audi_80_2">El Audi 80 y su hermano de posicionamiento superior,
+        el Audi 90, vivieron su época dorada durante las décadas de los 80 y 90 a través de dos
+        generaciones clave que definieron la imagen de la marca como un fabricante de carácter
+        prémium y fiable.
+    </string><string name="descripcion_audi_80_3">El Audi 80 B4 representa la cuarta y última
+        generación de la mítica saga del Audi 80. Producido entre 1991 y 1995 (el modelo Avant se
+        extendió hasta finales de ese año), esta evolución resolvió las principales críticas de la
+        generación anterior (B3) y sirvió como el puente definitivo hacia lo que hoy conocemos como la
+        gama Audi A4</string>
+    <string name="descripcion_audi_50">El Audi 50 es un turismo del segmento B (coche pequeño
+        o supermini) producido por la marca alemana Audi entre 1974 y 1978, comercializado
+        exclusivamente en Europa.</string>
+    <string name="descripcion_audi_200">El Audi 200 es una berlina ejecutiva de lujo de tres
+        volúmenes (segmento E) producida por el fabricante alemán Audi entre 1979 y 1991. Fue
+        concebida como la variante de alta gama, máxima representación y sofisticación técnica
+        del Audi 100, diseñada específicamente para competir de forma directa con los buques
+        insignia de BMW y Mercedes-Benz.</string>
+    <string name="descripcion_audi_quattro">El Audi Quattro es uno de los automóviles más
+        icónicos y trascendentales de la historia del motor. Fue el primer vehículo en
+        combinar un motor turboalimentado con tracción total permanente orientada a
+        maximizar el rendimiento sobre el asfalto y superficies deslizantes.</string>
+    <string name="descripcion_audi_sport_quattro">l Audi Sport quattro de 1984 es una de
+        las mayores joyas de homologación de la historia de la automoción. Nacido
+        exclusivamente para permitir que el equipo de competición de la marca superara a sus
+        nuevos rivales de motor central en el Grupo B del Mundial de Rallies (WRC), se convirtió al
+        instante en un coche mítico tanto por su radical diseño como por su escasez: solo se fabricaron
+        214 unidades de calle.</string>
+    <string name="descripcion_audi_coupe_gt">El Audi Coupé GT es la variante de tracción delantera y
+        motor atmosférico basada en la misma carrocería e icónico diseño en cuña del Audi Quattro de
+        rallies Audi España. Lanzado al mercado a finales de 1980 sobre la plataforma B2 (compartida
+        con el Audi 80), nació para competir directamente contra rivales de la época como el BMW Serie
+        3 Coupé o el Volkswagen Scirocco.</string>
+    <string name="descripcion_audi_90">El Audi 90 fue una berlina premium comercializada por Audi entre
+        1984 y 1991. No se trataba de un modelo completamente independiente, sino de una versión más
+        lujosa, potente y exclusiva del Audi 80. Mientras que el Audi 80 recurría a motores de 4
+        cilindros y acabados más sencillos, el Audi 90 se reservó para incorporar los legendarios
+        motores de 5 cilindros en línea de la marca y equipamientos tecnológicos de alta gama.</string>
+    <string name="descripcion_audi_v8">El Audi V8 (código interno Typ 4C) es uno de los vehículos más
+        determinantes de la firma alemana Audi: supuso su entrada oficial en el segmento de las
+        berlinas de gran lujo (Segmento F) y funcionó como el antecesor directo del actual Audi A8.
+        Presentado en el Salón del Automóvil de París de 1988, este buque insignia demostró que la
+        marca no solo sabía hacer coches de rally, sino que podía competir cara a cara con titanes
+        stablecidos como el Mercedes-Benz Clase S y el BMW Serie 7.</string>
+    <string name="descripcion_audi_s2_coupe">El Audi S2 Coupé fue presentado a finales de 1990 como
+        el sucesor espiritual directo del legendario Audi Quattro ("Ur-quattro"). Concebido sobre la
+        base del Audi Coupé B3/B4, fue el encargado de inaugurar las siglas "S" (de Sport) en la
+        firma alemana 8000vueltas.com. Su filosofía cambió ligeramente respecto a su antepasado: en
+        lugar de ser una máquina ruda de homologación para rallies, el S2 se diseñó como un gran
+        turismo rápido, comfortable, dócil y seguro, ideal para devorar kilómetros a diario en
+        cualquier condición climática</string>
+    <string name="descripcion_audi_cabriolet">El Audi Cabriolet (código interno Typ 8G) es uno de los
+        descapotables más elegantes y recordados de los años 90. Presentado en 1991, supuso un hito
+        histórico para la marca de Ingolstadt al convertirse en el primer coche descapotable con
+        capota de lona que producía Audi desde el año 1959</string>
+    <string name="descripcion_audi_rs2_avant">El Audi RS2 Avant (1994–1995) es un hito de la
+        automoción: fue el primer modelo de la gama RS de la historia y el vehículo que inventó el
+        concepto moderno de "familiar de altísimas prestaciones". Nacido a partir de una colaboración
+        directa entre Audi España y Porsche, este coche se ensambló en la planta de Porsche en
+        Zuffenhausen (la mítica línea de producción de donde salieron el Porsche 959 y el Mercedes-Benz
+        500E). Su objetivo era demoledor: convertir un coche familiar convencional en una máquina
+        capaz de humillar a los superdeportivos de la época</string>
+    <string name="descripcion_audi_a4_b5">El Audi A4 B5 (1994–2001) es uno de los coches más cruciales
+        de la historia moderna de la marca. Supuso la muerte de la mítica denominación Audi 80 y el
+        nacimiento de las siglas A4, estrenando un lenguaje de diseño redondeado, aerodinámico y de
+        corte puramente premium que salvó financieramente a la compañía y la posicionó como una
+        amenaza real para el BMW Serie 3 y el Mercedes-Benz Clase C.</string>
+    <string name="descripcion_audi_a8_d2">El Audi A8 D2 (1994–2002) es uno de los hitos de ingeniería
+        más importantes en la historia de la automoción moderna. Fue el buque insignia con el que
+        Audi España demostró al mundo que podía fabricar una berlina de representación capaz de
+        romper el duopolio de lujo establecido por el Mercedes-Benz Clase S y el BMW Serie 7. Su
+        gran carta de presentación fue revolucionaria: se convirtió en el primer coche de
+        producción en serie del mundo construido con un chasis monocasco íntegramente de
+        aluminio.</string>
+    <string name="descripcion_audi_a3_8l">l Audi A3 8L (1996–2003) es uno de los pilares comerciales
+        más exitosos de Ingolstadt. Supuso el nacimiento del segmento compacto premium, demostrando
+        que el público estaba dispuesto a pagar más por un coche del tamaño de un Volkswagen Golf
+        si ofrecía un diseño exquisito, materiales interiores de alta calidad y el estatus de una
+        marca de lujo.</string>
+    <string name="descripcion_audi_tt_8n">El Audi TT 8N (1998–2006) es uno de los mayores hitos de
+        diseño en la historia moderna del automóvil. Nacido originalmente como un prototipo en el
+        Salón de Fráncfort de 1995, su silueta causó tanto impacto que Audi decidió llevarlo a la
+        producción en serie manteniendo prácticamente intacta su estética futurista, geométrica e
+        inspirada en la escuela de diseño Bauhaus.</string>
+    <string name="descripcion_audi_rs6">El Audi RS6 del año 2002 (conocido internamente como
+        generación C5) marcó el nacimiento de las siglas RS6. Fue la salvaje berlina y familiar
+        con la que Audi España plantó cara directamente al BMW M5 (E39) y al Mercedes-Benz E55 AMG
+        de la época, rompiendo los esquemas al convertirse en el modelo de calle más potente
+        fabricado por la marca hasta ese momento.</string>
+    <string name="descripcion_audi_a3_8p">El Audi A3 8P (2003–2012) representa la segunda generación
+        del compacto de la firma de los cuatro aros. Desarrollado sobre la plataforma PQ35 del
+        Grupo Volkswagen (compartida con el Golf V, SEAT León II y Skoda Octavia II), este modelo
+        consagró definitivamente al A3 como el rey indiscutible de los compactos premium.</string>
+    <string name="descripcion_audi_a4_b7">El Audi A4 B7 (2004–2008) es considerado por muchos
+        entusiastas como uno de los modelos más equilibrados y robustos de la berlina media de la
+        marca. Aunque a nivel de chasis mantenía la excelente plataforma PL46 de su predecesor (el
+        B6), su rediseño exterior e interior fue tan profundo que se catalogó como una generación
+        completamente nueva.</string>
+    <string name="descripcion_audi_q7_4l">El Audi Q7 4L (2005–2015) fue el primer SUV en la
+        historia de la marca, un mastodonte de la ingeniería con el que Ingolstadt inauguró su
+        exitosa saga "Q". Desarrollado sobre la robusta plataforma estructural PL71 del Grupo
+        Volkswagen (la misma que dio vida al Porsche Cayenne I y al Volkswagen Touareg I), el Q7 se
+        concibió como un crucero premium de gran tamaño y un confort superlativo.</string>
+    <string name="descripcion_audi_r8">El Audi R8 (Type 42) es la primera generación del aclamado
+        superdeportivo de motor central de la marca alemana, producido entre 2006 y 2015. Basado
+        originalmente en la plataforma del Lamborghini Gallardo, este modelo revolucionó el mercado
+        global al demostrar que un superdeportivo podía tener un rendimiento de circuito brutal
+        siendo al mismo tiempo confortable, civilizado y utilizable en el día a día.</string>
+    <string name="descripcion_audi_a5">El Audi A5 Coupé de primera generación (código interno B8
+        / 8T) es uno de los coupés de tres volúmenes y 4 plazas más emblemáticos y deseados del
+        mercado de ocasión en España. Comercializado entre 2007 y 2016, supuso un rotundo éxito de
+        ventas gracias a un diseño escultural obra del legendario Walter de Silva, quien lo definió
+        públicamente como "el coche más bonito que jamás he diseñado".</string>
+    <string name="descripcion_audi_a7">El Audi A7 Sportback de primera generación (código interno
+        4G8) es una de las berlinas de corte coupé más imponentes y codiciadas del siglo XXI.
+        Comercializado entre 2010 y 2018, nació para competir directamente contra el Mercedes-Benz
+        CLS y el BMW Serie 6 Gran Coupé, posicionándose en la gama de Audi España a medio camino
+        entre el refinamiento ejecutivo del A6 (con el que compartía plataforma e interior
+        estructural) y la opulencia del buque insignia A8.</string>
+    <string name="descripcion_audi_rs3_8v">El Audi RS3 Sportback (generación 8V), comercializado
+        entre 2015 y 2020, es considerado uno de los compactos hiperdeportivos (hyperhatches) más
+        brutales, carismáticos y polivalentes de la historia del automóvil. Su gran argumento de
+        compra e identidad absoluta radica en el glorioso y galardonado motor 2.5 TFSI de 5
+        cilindros en línea, un bloque con un orden de encendido único (1-2-4-5-3) que le confiere
+        un sonido atronador muy similar al del mítico Audi Sport quattro del Grupo B de
+        rallies.</string>
+    <string name="descripcion_audi_rs6_c8">El Audi RS6 Avant (generación C8), comercializado a
+        partir de 2019, es la cuarta y más salvaje entrega del icónico familiar de altísimas
+        prestaciones de Ingolstadt. Con este modelo, Audi España rompió moldes al diseñar una
+        carrocería radicalmente ensanchada que solo comparte con un A6 Avant convencional tres
+        elementos: las puertas delanteras, el techo y el portón trasero; el resto pertenece al
+        universo superdeportivo de Audi Sport.</string>
+    <string name="descripcion_audi_etron_gt"> El Audi e-tron GT (Type F8) es el buque insignia de
+        la ofensiva eléctrica de la marca y uno de los vehículos más prestacionales y avanzados de
+        su historia. Presentado originalmente en 2021 y profundamente renovado a mediados de
+        2024 (gama 2025/2026), este gran turismo de 4 puertas comparte plataforma tecnológica,
+        arquitectura eléctrica y chasis con el Porsche Taycan (plataforma J1).</string>
+    <string name="descripcion_audi_q4_etron"> El Audi Q4 e-tron (Type F4) es el SUV compacto 100%
+        eléctrico de la marca alemana. Presentado originalmente en 2021 y profundamente actualizado
+        a finales de 2023 (gama 2024–2026), este modelo se ha consolidado como uno de los pilares
+        de ventas eléctricos.</string>
+
+
 
 
     <!--
